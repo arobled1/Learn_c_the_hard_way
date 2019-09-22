@@ -10,6 +10,11 @@ int main(int argc, char *argv[])
 	double universe_of_defects = 1 * 1024 * 1024 * 1024;
 	printf("The entire universe has %f bugs.\n", universe_of_defects);
 
+	// alternatively, you could use "long" instead of "double", 
+	// but remember to add an "l" after every long number.
+	long universe_of_defect = 1L * 1024L * 1024L * 1024L;
+	printf("The entire universe has %ld bugs.\n", universe_of_defect);
+
 	double expected_bugs = bugs * bug_rate;
 	printf("You are expected to have %f bugs.\n", expected_bugs);
 
